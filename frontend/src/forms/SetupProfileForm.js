@@ -373,7 +373,7 @@ function SetupProfileForm({ getUser }) {
                         </Input>
                         <p><b>Selected rulesets: {displayRulesets.join(', ')}</b></p>                     
                             
-                        <Label htmlFor="facebookName">Facebook Name: </Label>
+                        <Label htmlFor="facebookName">Facebook Link: </Label>
                         <Input
                             type="text"
                             name="facebookName"

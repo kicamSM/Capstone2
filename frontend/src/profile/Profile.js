@@ -214,7 +214,19 @@ function Profile({displayChatList}) {
                   </div>
                   }
                   { userState.facebookName && <div className="mb-5">
-                    <p className="lead fw-normal mb-1">You can find me on facebook: {userState.facebookName}</p>
+                    {/* <p className="lead fw-normal mb-1">You can find me on facebook: {userState.facebookName}
+                    </p> */}
+                      <div style={{position: 'absolute', bottom: '15px', right: '20px'}}>
+                                {userState.facebookName && 
+                                <a 
+                                  href={userState.facebookName}
+                                  target="_blank"
+                                  rel="noopener noreferrer" 
+                                >
+                                    <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white"></img>
+                                </a>
+                                }
+                            </div>
                   </div>
                   }
                 </MDBCardBody>

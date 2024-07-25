@@ -180,10 +180,21 @@ function UserDetails({ handleMessages, displayChatList }) {
                     </div>
                   </div>
                   }
-                 { derbyUser.facebookName && <div className="mb-5">
+                 {/* { derbyUser.facebookName && <div className="mb-5">
                     <p className="lead fw-normal mb-1">You can find me on facebook: {derbyUser.facebookName}</p>
                   </div>
+                    } */}
+                  <div style={{position: 'absolute', bottom: '15px', right: '20px'}}>
+                    {derbyUser.facebookName && 
+                      <a 
+                        href={derbyUser.facebookName}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                          <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white"></img>
+                      </a>
                     }
+                  </div>
                 </MDBCardBody>
               </MDBCard>
           </MDBRow>
